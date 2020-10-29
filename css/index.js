@@ -12,12 +12,20 @@ module.exports = {
     'at-rule-name-space-after': 'always',
     'at-rule-no-vendor-prefix': true,
     'at-rule-semicolon-space-before': 'never',
-    'block-closing-brace-empty-line-before': null,
-    'block-closing-brace-newline-after': null,
-    'block-opening-brace-space-before': null,
+    'block-closing-brace-empty-line-before': 'never',
+    'block-closing-brace-newline-after': [
+      'always',
+      {
+        'ignoreAtRules': [
+          'if',
+          'else'
+        ]
+      }
+    ],
+    'block-opening-brace-space-before': 'always',
     'color-named': 'never',
     'declaration-block-semicolon-newline-before': 'never-multi-line',
-    'declaration-empty-line-before': null,
+    'declaration-empty-line-before': 'never',
     'declaration-no-important': true,
     'font-family-name-quotes': 'always-where-recommended',
     'font-weight-notation': [
